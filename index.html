@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Doug Muraki","alternateName":"Douglas Muraki","url":"https://dougmuraki.com/","image":"https://dougmuraki.com/doug-muraki.jpg","jobTitle":"Owner","description":"Owner of Sunfish Pool Service in Sacramento, California.","worksFor":{"@type":"LocalBusiness","name":"Sunfish Pool Service","url":"https://sunfishswim.com/","telephone":"+1-916-313-8754","slogan":"Serving people through exceptional pool service.","sameAs":["https://www.facebook.com/profile.php?id=61585791212975","https://www.instagram.com/sunfish_pool_service/","https://nextdoor.com/page/sunfish-pool-service-sacramento-ca/"],"address":{"@type":"PostalAddress","addressLocality":"Sacramento","addressRegion":"CA","addressCountry":"US"}},"homeLocation":{"@type":"Place","name":"Sacramento, California"},"sameAs":["https://cabjournals.com/","https://www.linkedin.com/in/dougmuraki/","https://www.youtube.com/@dougmuraki","https://medium.com/@dougmuraki","https://about.me/dougmuraki","https://gravatar.com/dougmuraki","https://www.alignable.com/sacramento-ca/sunfish-pool-service","https://www.crunchbase.com/person/doug-muraki","https://www.sunfishswim.com/about-doug","https://sunfishswim.com/"]}
+{"@context":"https://schema.org","@type":"Person","name":"Doug Muraki","alternateName":"Douglas Muraki","url":"https://dougmuraki.com/","image":"https://dougmuraki.com/doug-muraki.jpg","jobTitle":"Owner","description":"Owner of Sunfish Pool Service in Sacramento, California.","worksFor":{"@type":"LocalBusiness","name":"Sunfish Pool Service","url":"https://sunfishswim.com/","logo":"https://dougmuraki.com/sunfish-logo.png","telephone":"+1-916-313-8754","slogan":"Serving people through exceptional pool service.","sameAs":["https://www.facebook.com/profile.php?id=61585791212975","https://www.instagram.com/sunfish_pool_service/","https://nextdoor.com/page/sunfish-pool-service-sacramento-ca/","https://www.linkedin.com/company/sunfish-pool-service/","https://www.crunchbase.com/organization/sunfish-pool-service","https://www.alignable.com/sacramento-ca/sunfish-pool-service"],"address":{"@type":"PostalAddress","addressLocality":"Sacramento","addressRegion":"CA","addressCountry":"US"}},"homeLocation":{"@type":"Place","name":"Sacramento, California"},"sameAs":["https://cabjournals.com/","https://www.linkedin.com/in/dougmuraki/","https://www.youtube.com/@dougmuraki","https://medium.com/@dougmuraki","https://about.me/dougmuraki","https://gravatar.com/dougmuraki","https://www.alignable.com/sacramento-ca/sunfish-pool-service","https://www.crunchbase.com/person/doug-muraki","https://www.sunfishswim.com/about-doug","https://sunfishswim.com/"]}
 </script>
 <style>
 :root{--ink:#0C2D57;--ink-soft:#3D5578;--paper:#FFFFFF;--paper-2:#EFF3F8;--coral:#FC6736;--pink:#FFB0B0;--line:#D4DCE7;--band:#0C2D57;--band-ink:#EFECEC;box-sizing:border-box}
@@ -36,6 +36,13 @@ nav a{margin-left:1.25rem;text-decoration:none;color:var(--ink-soft);font-size:0
 nav a:first-child{margin-left:0}
 .hero{padding:2.5rem 0 4rem}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:3.5rem;align-items:center}
+.brand{display:inline-block;margin:0 0 1.25rem}.brand img{width:190px;height:auto}.brand .dark{display:none}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .brand .light{display:none}:root:not([data-theme="light"]) .brand .dark{display:block}}
+:root[data-theme="dark"] .brand .light{display:none}:root[data-theme="dark"] .brand .dark{display:block}
+.work .co{display:flex;align-items:center;gap:1rem;margin:0 0 0.5rem}.work .co img{width:150px;height:auto}.work .co .dark{display:none}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .work .co .light{display:none}:root:not([data-theme="light"]) .work .co .dark{display:block}}
+:root[data-theme="dark"] .work .co .light{display:none}:root[data-theme="dark"] .work .co .dark{display:block}
+.band .co{margin:0 0 1.5rem}.band .co img{width:170px;height:auto}
 .eyebrow{font-size:0.85rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--coral);margin:0 0 1rem}
 h1{font-size:clamp(2.5rem,6.4vw,5rem);line-height:1;letter-spacing:-0.035em;font-weight:800;margin:0 0 1.5rem}
 .lede{font-size:clamp(1.15rem,2vw,1.4rem);line-height:1.5;margin:0 0 1.75rem;max-width:36ch;color:var(--ink-soft)}
@@ -74,6 +81,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 <main>
 <div class="hero"><div class="wrap">
 <div>
+<a class="brand" href="https://sunfishswim.com/" aria-label="Sunfish Pool Service"><img class="light" src="sunfish-logo.svg" alt="Sunfish Pool Service" width="190" height="95"><img class="dark" src="sunfish-logo-reverse.svg" alt="" width="190" height="95"></a>
 <p class="eyebrow">Owner, Sunfish Pool Service</p>
 <h1>I'm Doug Muraki. I serve people for a living.</h1>
 <p class="lede">I own Sunfish Pool Service in Sacramento. We're not just selling pool care. We're here to take care of people, the best we can, every single week.</p>
@@ -89,6 +97,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 </div></div></section>
 
 <section id="values" class="band"><div class="wrap"><h2>What we stand on</h2><div>
+<p class="co"><a href="https://sunfishswim.com/"><img src="sunfish-logo-reverse.svg" alt="Sunfish Pool Service" width="170" height="85"></a></p>
 <p class="mission">Serving people through exceptional pool service.</p>
 <div class="values">
 <div><h3>Reliability</h3><p>Same day every week, on time. You shouldn't have to wonder if we're coming.</p></div>
@@ -104,19 +113,20 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 </div></div></section>
 
 <section id="work"><div class="wrap"><h2>What I'm working on</h2><div class="work body">
-<article><h3>Sunfish Pool Service</h3><p>Weekly residential pool care across Sacramento, Carmichael, Citrus Heights, Antelope, Fair Oaks and the neighborhoods around them. Flat monthly plans, repair work quoted in writing, and a crew that shows up the same day every week.</p><a class="more" href="https://sunfishswim.com/">sunfishswim.com</a></article>
+<article><p class="co"><a href="https://sunfishswim.com/"><img class="light" src="sunfish-logo.svg" alt="Sunfish Pool Service" width="150" height="75"><img class="dark" src="sunfish-logo-reverse.svg" alt="" width="150" height="75"></a></p><h3>Sunfish Pool Service</h3><p>Weekly residential pool care across Sacramento, Carmichael, Citrus Heights, Antelope, Fair Oaks and the neighborhoods around them. Flat monthly plans, repair work quoted in writing, and a crew that shows up the same day every week.</p><a class="more" href="https://sunfishswim.com/">sunfishswim.com</a></article>
 <article style="margin-top:2rem"><h3>Writing about food and travel</h3><p>My wife and I plan our trips around what we're going to eat. I write about where we went, what we ate, and what was worth the trip.</p><a class="more" href="https://medium.com/@dougmuraki">Read on Medium</a></article>
-<article style="margin-top:2rem"><h3>Cast and Blast Journals</h3><p>My fishing and hunting journal. Trip notes and photos from the water and the field, dated and kept in one place.</p><a class="more" href="https://cabjournals.com/">cabjournals.com</a></article>
+<article style="margin-top:2rem"><h3>Cast and Blast Journals</h3><p>My fishing and hunting journal. Trip notes and photos from the water and the field, kept in one place.</p><a class="more" href="https://cabjournals.com/">cabjournals.com</a></article>
 </div></div></section>
 
 <section id="contact" class="contact"><div class="wrap"><h2>Contact</h2><div>
-<ul class="plain"><li>Pool service: <a href="https://sunfishswim.com/">sunfishswim.com</a> or <a href="tel:+19163138754">(916) 313-8754</a>. We'll get you taken care of.</li><li>Sunfish on <a href="https://www.facebook.com/profile.php?id=61585791212975">Facebook</a>, <a href="https://www.instagram.com/sunfish_pool_service/">Instagram</a> and <a href="https://nextdoor.com/page/sunfish-pool-service-sacramento-ca/">Nextdoor</a>.</li></ul>
+<ul class="plain"><li>Pool service: <a href="https://sunfishswim.com/">sunfishswim.com</a> or <a href="tel:+19163138754">(916) 313-8754</a>. We'll get you taken care of.</li><li>Sunfish on <a href="https://www.facebook.com/profile.php?id=61585791212975">Facebook</a>, <a href="https://www.instagram.com/sunfish_pool_service/">Instagram</a> and <a href="https://nextdoor.com/page/sunfish-pool-service-sacramento-ca/">Nextdoor</a>, <a href="https://www.linkedin.com/company/sunfish-pool-service/">LinkedIn</a> and <a href="https://www.crunchbase.com/organization/sunfish-pool-service">Crunchbase</a>.</li></ul>
 <ul class="links" aria-label="Doug Muraki elsewhere">
 <li><a href="https://cabjournals.com/" rel="me">Cast and Blast Journals</a></li>
 <li><a href="https://www.linkedin.com/in/dougmuraki/" rel="me">LinkedIn</a></li>
 <li><a href="https://www.youtube.com/@dougmuraki" rel="me">YouTube</a></li>
 <li><a href="https://medium.com/@dougmuraki" rel="me">Medium</a></li>
 <li><a href="https://about.me/dougmuraki" rel="me">About.me</a></li>
+<li><a href="https://gravatar.com/dougmuraki" rel="me">Gravatar</a></li>
 <li><a href="https://www.alignable.com/sacramento-ca/sunfish-pool-service" rel="me">Alignable</a></li>
 <li><a href="https://www.crunchbase.com/person/doug-muraki" rel="me">Crunchbase</a></li>
 <li><a href="https://www.sunfishswim.com/about-doug" rel="me">Sunfish owner page</a></li>
