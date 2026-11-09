@@ -18,6 +18,7 @@ for p in posts:
 
 index_html = (ROOT / "index.html").read_text()
 style = re.search(r"<style>.*?</style>", index_html, re.S).group(0)
+style = "\n".join(l for l in style.splitlines() if not (l.startswith(".note-list") or l.startswith(".meta{")))
 extra_css = """<style>
 .note-list{list-style:none;padding:0;margin:0;display:grid;gap:1.5rem}
 .note-list li{border-top:1px solid var(--line);padding-top:1.1rem}
